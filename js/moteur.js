@@ -1,9 +1,20 @@
-/*global $, jQuery, TweenMax, TimelineMax, Power4*/
+/*global $, jQuery */
+
+var vid = document.getElementById('bgvid');
+if (vid) {
+    vid.addEventListener('ended', function () {
+        $(this).css({'display': 'none'});
+        $('#skip').css({'display': 'none'});
+    });
+}
+
 $(function () {
     'use strict';
-    $("bgvid").bind("ended", function() {
-    location.href = "index.html";
-  });
+    
+    $('#skip').on('click', function () {
+        $(this).css({'display': 'none'});
+        $('#bgvid').css({'display': 'none'});
+    });
 
 /****** 
 BURGER 
@@ -23,19 +34,19 @@ BURGER
 PARALAX
 ***********/
     
-    $(function(){
-    $(window).scroll(function(){
-    $('#about-bio').css({'top':function(index, value){return 150-$(window).scrollTop()*0.4}});
-    $('#about-bio2').css({'top':function(index, value){return 400-$(window).scrollTop()*0.3}}); 
-    $('#span-bio').css({'top':function(index, value){return 400-$(window).scrollTop()*0.3}});
-    $('#team-h3').css({'top':function(index, value){return 830-$(window).scrollTop()*0.5}});
-    $('#h3-span').css({'top':function(index, value){return 820-$(window).scrollTop()*0.5}});
-    $('#team').css({'top':function(index, value){return 870-$(window).scrollTop()*0.4}});
-    $('h4').css({'top':function(index, value){return 1700-$(window).scrollTop()*0.2}});
+    $(function () {
+        $(window).scroll(function () {
+            $('#about-bio').css({'top': function (index, value) {return 150 - $(window).scrollTop() * 0.4}});
+            $('#about-bio2').css({'top': function (index, value) {return 400 - $(window).scrollTop() * 0.3}});
+            $('#span-bio').css({'top': function (index, value) {return 400 - $(window).scrollTop() * 0.3}});
+            $('#team-h3').css({'top': function (index, value) {return 830 - $(window).scrollTop() * 0.5}});
+            $('#h3-span').css({'top': function (index, value) {return 820 - $(window).scrollTop() * 0.5}});
+            $('#team').css({'top': function (index, value) {return 870 - $(window).scrollTop() * 0.4}});
+            $('h4').css({'top': function (index, value) {return 1700 - $(window).scrollTop() * 0.2}});
     
-  });
+        });
    
-});
+    });
     /* =================================================================== ASIDE ====================================================================== */
     var	$parent = $("main"),
         $aside = $("#aside"),

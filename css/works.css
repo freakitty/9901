@@ -292,7 +292,8 @@ MAIN NAV
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .items {
