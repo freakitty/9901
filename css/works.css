@@ -107,7 +107,7 @@ ul>li>a{
     opacity: 0.5;
 }
 
-h2{
+#h2{
     position: fixed;
     bottom: 15%;
     font-size: 2em;
@@ -115,6 +115,11 @@ h2{
     font-weight: 700;
     transform: rotate(270deg);
     margin-left: 23px;
+    text-decoration: none;
+    transition: color .4s ease;
+}
+#h2:hover{
+    color: #f7f7f7;
 }
 
 h3{
@@ -127,6 +132,9 @@ h3{
     margin-left: 30px;
 }
 
+#h3-vid{
+    margin-left: 75px;
+}
 
 /****** BURGER ****/
 #hamburger-button{
@@ -278,28 +286,13 @@ MAIN NAV
 
 /* ========================= GALLERY ======================= */
 
+/* ============== ILLU 01 =========== */
+
 #illu1{
     position: relative;
     background:  url(../images/illustration/animals/Ceva_Judicael_2eme_annee_Insecte.jpg);
     background-size: cover;
     
-}
-
-.gallery {
-    width: 80%;
-    height: 100%;
-    margin-left: 200px;
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.items {
-    width: 300px;
-    height: 200px;
-    cursor: pointer;  
 }
 
 #illu1:after{
@@ -329,6 +322,200 @@ MAIN NAV
     opacity: 1;
 }
 
+/* ============== ILLU 02 =========== */
+
+#illu2{
+    position: relative;
+    background:  url(../images/illustration/landscape.png);
+    background-size: cover;
+}
+
+#illu2:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/landscape.png);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/landscape.png);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/landscape.png);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7), url(../images/illustration/landscape.png);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))), url(../images/illustration/landscape.png);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/landscape.png);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#illu2:hover:after{
+    opacity: 1;
+}
+
+/* ============== ILLU 03 =========== */
+
+#illu3{
+    position: relative;
+    background:  url(../images/illustration/free-drawing.jpg);
+    background-size: cover;
+}
+
+#illu3:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/free-drawing.jpg);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/free-drawing.jpg);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/free-drawing.jpg);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7), url(../images/illustration/free-drawing.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))), url(../images/illustration/free-drawing.jpg);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/free-drawing.jpg);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#illu3:hover:after{
+    opacity: 1;
+}
+
+/* ============== ILLU 04 =========== */
+
+#illu4{
+    position: relative;
+    background:  url(../images/illustration/365-Project/365-02.png);
+    background-size: cover;
+}
+
+#illu4:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/365-Project/365-02.png);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/365-Project/365-02.png);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/365-Project/365-02.png);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7), url(../images/illustration/365-Project/365-02.png);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))), url(../images/illustration/365-Project/365-02.png);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/365-Project/365-02.png);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#illu4:hover:after{
+    opacity: 1;
+}
+
+
+/* ============== ILLU 05 =========== */
+
+#illu5{
+    position: relative;
+    background:  url(../images/illustration/Badness/Badness-typo.png);
+    background-size: cover;
+}
+
+#illu5:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/Badness/Badness-typo.png);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/Badness/Badness-typo.png);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/Badness/Badness-typo.png);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7), url(../images/illustration/Badness/Badness-typo.png);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))), url(../images/illustration/Badness/Badness-typo.png);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/Badness/Badness-typo.png);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#illu5:hover:after{
+    opacity: 1;
+}
+
+/* ============== ILLU 06 =========== */
+
+#illu6{
+    position: relative;
+    background:  url(../images/illustration/Geek/Geek-nb.jpg);
+    background-size: cover;
+}
+
+#illu6:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/Geek/Geek-nb.jpg);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/Geek/Geek-nb.jpg);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/Geek/Geek-nb.jpg);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7), url(../images/illustration/Geek/Geek-nb.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))), url(../images/illustration/Geek/Geek-nb.jpg);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/Geek/Geek-nb.jpg);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#illu6:hover:after{
+    opacity: 1;
+}
+
+.gallery {
+    width: 80%;
+    height: 100%;
+    margin-left: 200px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.items {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;  
+}
+
 .items .name{
     position: relative;
     width: 100%;
@@ -354,9 +541,9 @@ MAIN NAV
     position: fixed;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 70%;
     height: 100%;
-    background: #eee;
+    background: #f7f7f7;
     overflow: scroll;
 }
 #aside img {
@@ -377,17 +564,21 @@ MAIN NAV
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     text-decoration: none;
+    transition: opacity .5s ease;
 }
 
+#aside .close:hover{
+    opacity: 0.5;
+}
 .show-detail {
     overflow: hidden;
 }
 .show-detail main {
-    -webkit-transform: translateX(-60%);
-    -moz-transform: translateX(-60%);
-    -ms-transform: translateX(-60%);
-    -o-transform: translateX(-60%);
-    transform: translateX(-60%);
+    -webkit-transform: translateX(-70%);
+    -moz-transform: translateX(-70%);
+    -ms-transform: translateX(-70%);
+    -o-transform: translateX(-70%);
+    transform: translateX(-70%);
 }
 
 .visually-hidden {
@@ -400,4 +591,15 @@ MAIN NAV
     padding: 0;
     border: 0;
 }
+
+h4{
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.wrapper p{
+    font-family: Mate;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
 
