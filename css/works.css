@@ -136,6 +136,9 @@ h3{
     margin-left: 75px;
 }
 
+#h3-dg{
+    margin-left: 23px;
+}
 /****** BURGER ****/
 #hamburger-button{
     position: fixed;
@@ -498,6 +501,77 @@ MAIN NAV
     opacity: 1;
 }
 
+/* ============== PHOTO 01 =========== */
+
+#photo1{
+    position: relative;
+    background:  url(../images/photography/anne-laura/IMG_2311.jpg);
+    background-size: cover;
+}
+
+#photo1:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/anne-laura/IMG_2311.jpg);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/anne-laura/IMG_2311.jpg);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/anne-laura/IMG_2311.jpg);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7), url(../images/photography/anne-laura/IMG_2311.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))), url(../images/photography/anne-laura/IMG_2311.jpg);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/anne-laura/IMG_2311.jpg);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#photo1:hover:after{
+    opacity: 1;
+}
+
+/* ============== PHOTO 02 =========== */
+
+#photo2{
+    position: relative;
+    background:  url(../images/photography/lindsay/IMG_2663.jpg);
+    background-size: cover;
+}
+
+#photo2:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/lindsay/IMG_2663.jpg);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/lindsay/IMG_2663.jpg);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/lindsay/IMG_2663.jpg);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7), url(../images/photography/lindsay/IMG_2663.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))), url(../images/photography/lindsay/IMG_2663.jpg);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/lindsay/IMG_2663.jpg);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#photo2:hover:after{
+    opacity: 1;
+}
+
+
 .gallery {
     width: 80%;
     height: 100%;
@@ -541,11 +615,12 @@ MAIN NAV
     position: fixed;
     top: 0;
     right: 0;
-    width: 70%;
+    width: 80%;
     height: 100%;
     background: #f7f7f7;
     overflow: scroll;
 }
+
 #aside img {
     width: 100%;
     vertical-align: top;
@@ -574,11 +649,11 @@ MAIN NAV
     overflow: hidden;
 }
 .show-detail main {
-    -webkit-transform: translateX(-70%);
-    -moz-transform: translateX(-70%);
-    -ms-transform: translateX(-70%);
-    -o-transform: translateX(-70%);
-    transform: translateX(-70%);
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    transform: translateX(-80%);
 }
 
 .visually-hidden {
@@ -600,6 +675,8 @@ h4{
     font-family: Mate;
     font-size: 1.3em;
     font-weight: 500;
+    width: 600px;
+    margin-left: 20%;
 }
 
 
