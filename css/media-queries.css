@@ -1,0 +1,49 @@
+@media screen and (min-width:768px){
+    .navbar ul li{border-bottom:1px solid #282a29;}
+    .socialIcon{display: none;}
+}
+
+@media screen and (max-width:768px){
+    .burger{display: block;}
+    .main-menu{display: none;}
+    #logo{margin-top: 20px; left: 43%; transform: translateX(-50%);}
+    #hamburger-button{top: 30px; margin-left: 30px;}
+    .navbar{width: 100%; left: -100%;}
+    #socialNetwork{display: none;}
+    .navbar ul{margin-top: 30%; margin-left: 35%; width: 160px;}
+    .socialIcon{ float: left; transition: opacity .2s ease;}
+    .socialIcon:hover{opacity: 0.6;}
+    .navbar ul li{font-size: 1.4em;}
+    h1{font-size: 70px;}
+    .works-nav{font-size: 40px;}
+    .span-nav{height: 40px;}
+    #videos-nav{top: 25%;}
+    #illu-nav{left: 30%;}
+    #photo-nav{left: 30%; top: 55%;}
+    #dg-nav{left: 25%; top: 70%;}
+    .span-nav:first-child{top: 32%;}
+    .span-nav:nth-child(2){top: 47%;}
+    .span-nav:last-child{top: 62%;}
+    .items{width: 250px; height: 170px;}
+    .gallery{margin-left: 120px;}
+    h2{margin-left: -20px;}
+    #h2about{margin-left: 0px;}
+
+}
+
+@media screen and (max-width:600px){
+}
+
+@media screen and (min-width:480px){
+}
+
+@media screen and (max-width:480px){
+
+}
+
+@media screen and (max-width:400px){
+}
+
+@media screen and (max-width:320px){
+
+}

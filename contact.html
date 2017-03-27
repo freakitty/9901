@@ -2,18 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>9901 - contact</title>
+    <title>9901</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta name="description" content="group of Graphic Designer based in Paris 9901 - motion - design - print - photography - videos">
     <meta name="keywords" content="designer, graphic, motion, video, paris, france, photography, illustration, design, print, graphism, visual identity">
     <meta name="author" content="Castano Cindy">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/global.css" type="text/css">
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+    
 </head>
 <body>
     <main>
        
+        <div id="burger" class="burger"><!-- BURGER -->
+                <div class="navbar">
+                    <ul>
+                        <li><a id="burger-home" href="index.html">HOME</a></li>
+                        <li><a id="burger-works" href="works.html">WORKS</a></li>
+                        <li><a id="burger-about" href="about.html">ABOUT</a></li>
+                        <li><a id="burger-contact" href="contact.html">CONTACT</a></li>
+                        <li class="socialIcon"><a href="https://www.facebook.com/9901Group/?ref=ts&fref=ts" target="_blank">
+           <img src="images/icon-facebook.png" alt="icon-facebook" id="facebook-icon"></a></li>
+                        <li class="socialIcon"><a href="#" target="_blank">
+           <img src="images/icon-twitter.png" alt="icon-twitter"></a></li>
+                        <li class="socialIcon"><a href="https://vimeo.com/9901codo" target="_blank">
+           <img src="images/icon-vimeo.png" alt="icon-vimeo"></a></li>
+                    </ul>
+                </div>
+
+                <div id="hamburger-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            
+            </div> <!-- FIN BURGER -->
         
-            <ul>
+            <ul class="main-menu">
                 <li class="button" id="about-button"><a href="about.html">ABOUT</a></li>
                 <li class="button" id="home-button"> <a href="index.html">HOME</a> </li>
                 <li class="button" id="works-button"><a href="works.html">WORKS</a> <span></span></li>
@@ -44,5 +70,9 @@
         <h2>CONTACT</h2>
         
     </main>
+        
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/moteur.js"></script>
+    
 </body>
 </html>

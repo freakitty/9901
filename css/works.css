@@ -122,7 +122,7 @@ ul>li>a{
     color: #f7f7f7;
 }
 
-h3{
+h6{
     position: fixed;
     bottom: 15%;
     font-size: 1.5em;
@@ -132,11 +132,11 @@ h3{
     margin-left: 30px;
 }
 
-#h3-vid{
+#h6-vid{
     margin-left: 75px;
 }
 
-#h3-dg{
+#h6-dg{
     margin-left: 23px;
 }
 /****** BURGER ****/
@@ -615,13 +615,14 @@ MAIN NAV
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 .items {
     width: 300px;
     height: 200px;
-    cursor: pointer;  
+    cursor: pointer;
+
 }
 
 .items .name{
@@ -711,6 +712,7 @@ h4{
     font-weight: 500;
     width: 600px;
     margin-left: 20%;
+    line-height: 20px;
 }
 
 
