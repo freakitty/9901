@@ -43,7 +43,7 @@ PARALAX
             $('#team-h3').css({'top': function (index, value) {return 900 - $(window).scrollTop() * 0.4}});
             $('#h3-span').css({'top': function (index, value) {return 880 - $(window).scrollTop() * 0.4}});
             $('#team').css({'top': function (index, value) {return 950 - $(window).scrollTop() * 0.3}});
-            $('h4').css({'top': function (index, value) {return 2000 - $(window).scrollTop() * 0.2}});
+            
     
         });
    

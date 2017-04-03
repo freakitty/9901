@@ -1,16 +1,16 @@
-@media screen and (min-width:768px){
+@media screen and (min-width:1024px){
     .navbar ul li{border-bottom:1px solid #282a29;}
     .socialIcon{display: none;}
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
     .burger{display: block;}
     .main-menu{display: none;}
     #logo{margin-top: 20px; left: 43%; transform: translateX(-50%);}
     #hamburger-button{top: 30px; margin-left: 30px;}
     .navbar{width: 100%; left: -100%;}
     #socialNetwork{display: none;}
-    .navbar ul{margin-top: 30%; margin-left: 35%; width: 160px;}
+    .navbar ul{margin-top: 30%; margin-left: 35%; width: 140px;}
     .socialIcon{ float: left; transition: opacity .2s ease;}
     .socialIcon:hover{opacity: 0.6;}
     .navbar ul li{font-size: 1.4em;}
@@ -31,17 +31,25 @@
 
 }
 
-@media screen and (max-width:600px){
-}
-
-@media screen and (min-width:480px){
-}
 
 @media screen and (max-width:480px){
+    #logo{width: 55px; left: 40%;}
+    h1{font-size: 50px; width: 300px;}
+    .navbar ul{font-size: 1.3em; width: 150px;}
+    #skip{display: none;}
+    #bgvid{display: none;}
+    h4{top: 2100px; font-size: 40px; width: 180px;}
+    h2{font-size: 1.5em;}
+    h3{width: 250px; font-size: 50px;}
+    #h3-span{width: 140px;}
+    .about-bio{width: 150px; font-size: 0.8em;}
+    #about-bio2{width: 150px;}
+    #span-bio{height: 310px; right: 11%;}
+    article img{width: 150px;}
+    #mail{width: 100px;}
+    #h1{width: 200px; font-size: 40px;}
+    
 
-}
-
-@media screen and (max-width:400px){
 }
 
 @media screen and (max-width:320px){

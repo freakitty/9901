@@ -289,6 +289,149 @@ MAIN NAV
 
 /* ========================= GALLERY ======================= */
 
+
+/* ============== VID 01 =========== */
+
+#vid1{
+    position: relative;
+    background: url(../images/video/vid01.png);
+    background-size: cover;
+}
+
+#vid1:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid01.png);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid01.png);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)),  url(../images/video/vid01.png);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7),  url(../images/video/vid01.png);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))),  url(../images/video/vid01.png);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid01.png);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#vid1:hover:after{
+    opacity: 1;
+}
+
+/* ============== VID 02 =========== */
+
+#vid2{
+    position: relative;
+    background: url(../images/video/vid02.png);
+    background-size: cover;
+}
+
+#vid2:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid02.png);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid02.png);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)),  url(../images/video/vid02.png);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7),  url(../images/video/vid02.png);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))),  url(../images/video/vid02.png);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid02.png);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#vid2:hover:after{
+    opacity: 1;
+}
+
+/* ============== VID 03 =========== */
+
+#vid3{
+    position: relative;
+    background: url(../images/video/vid03.png);
+    background-size: cover;
+}
+
+#vid3:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid03.png);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid03.png);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)),  url(../images/video/vid03.png);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7),  url(../images/video/vid03.png);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))),  url(../images/video/vid03.png);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid03.png);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#vid3:hover:after{
+    opacity: 1;
+}
+
+
+/* ============== VID 04 =========== */
+
+#vid4{
+    position: relative;
+    background: url(../images/video/vid04.png);
+    background-size: cover;
+}
+
+#vid4:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid04.png);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid04.png);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)),  url(../images/video/vid04.png);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7),  url(../images/video/vid04.png);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))),  url(../images/video/vid04.png);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/video/vid04.png);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#vid4:hover:after{
+    opacity: 1;
+}
+
+
 /* ============== ILLU 01 =========== */
 
 #illu1{
@@ -715,4 +858,7 @@ h4{
     line-height: 20px;
 }
 
-
+iframe{
+     width: 100%; 
+    height: 500px;
+}
