@@ -856,9 +856,12 @@ h4{
     width: 600px;
     margin-left: 20%;
     line-height: 20px;
+    color: #999;
 }
 
 iframe{
      width: 100%; 
     height: 500px;
 }
+
+b{font-weight: 700;}

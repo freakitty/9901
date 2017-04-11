@@ -311,20 +311,25 @@ h3{
     position: absolute;
     color: #f7f7f7;
     width: 200px;
-    font-family: Mate;
+    font-family: 'Roboto';
+    font-weight: 300;
     font-size: 0.9em;
     line-height: 1.4em;
+    letter-spacing: .4px;
+    background: rgba(0,0,0,0.5);
     
 }
 #about-bio{
     left: 30%;
-    top: 300px;;
+    top: 300px;
+    font-family: 'Mate';
 }
 #about-bio2{
     right: 15%;
     top: 550px;
     width: 250px;
     text-align: right; 
+    font-family: 'Mate';
 }
 #span-bio{
     position: absolute;
@@ -333,7 +338,7 @@ h3{
     display: block;
     background-color: #f7f7f7;
     width: 2px;
-    height: 240px;
+    height: 180px;
 }
 
 #h3-span{
@@ -352,12 +357,13 @@ h3{
     top: 950px;
 }
 article{
-    height: 420px;
+    height: 900px;
     width: 200px;
     display: inline-block;
     vertical-align: top;
     margin-top: 66px;
     position: relative;
+    
 }
 #jeo{
     margin-right: 40px;
@@ -387,3 +393,5 @@ h4{
     font-size: 80px;
     font-weight: 900;
 }
+
+b{font-weight: 700;}
