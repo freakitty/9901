@@ -164,7 +164,8 @@ h2{
     margin-left: 23px;
 }
 
-/****** BURGER ****/
+/* ========================== BURGER ===================== */
+
 #hamburger-button{
     position: fixed;
     z-index: 9999;
@@ -172,7 +173,7 @@ h2{
     vertical-align: top;
     height:30px;
     width:40px;
-    margin-left:120px;
+    left:30px;
     top:50%;
     cursor: pointer;
 }
@@ -215,8 +216,8 @@ h2{
     opacity:.9;
     z-index:888; 
     height:100%;
-    width: 200px;
-    left:-210px;
+    width: 100%;
+    left:-110%;
     transition:0.4s;
     -webkit-transition-timing-function: ease-out;
     -moz-transition-timing-function: ease-out;
@@ -225,25 +226,31 @@ h2{
     transition-timing-function: ease-out;
     background-color:#000;
 }
+
 .navbar.open{
     left:0;
 }
+
 .navbar ul{
+    position: relative;
     list-style:none;
-    margin-top:60%;
-    font-size:1.5em;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    font-size: 2.5em;
 }
 
 .navbar ul li{
     margin-bottom:10px;
     padding:10px;
-    text-align:left;
+    text-align:center;
     z-index: 999;
-    
 }
+
 .navbar ul li a{
     transition: .3s ease;
 }
+
 .navbar>ul>li>a:hover{
     color: #45FF00;
 }
