@@ -6,41 +6,7 @@ main{
     height: 100%;
 }
 
-/***********
-VIDEO
-**********/
-
-#bgvid{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-}
-
-#skip{
-    position: absolute;
-    color: #45FF00;
-    text-align: center;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;  
-    z-index: 20;
-    transition: .5s ease;
-}
-
-#skip:hover{
-    color: #f7f7f7;
-}
-
-
-/************* 
-NAVIGATION
-**************/
+/* ===================================  NAVIGATION ========================== */
 
 #logo{
     position: fixed;
@@ -56,72 +22,6 @@ ul>li>a{
     color: #f7f7f7;
 }
 
-.button{
-    cursor: pointer;
-    position: absolute;   
-}
-
-#about-button{
-    right: 150px;
-    top: 22px;
-    box-shadow: inset 0px -2px 0px #45FF00;
-    transition: all .2s ease 0s;
-    line-height:25px;
-    padding: 5px;
-}
-
-#about-button:hover{
-    box-shadow:inset 0px -35px 0px #45FF00;   
-}
-
-#contact-button{
-    right: 50px;
-    top: 22px;
-    box-shadow: inset 0px -2px 0px #45FF00;
-    transition: .2s ease 0s;
-    line-height:25px;
-    padding: 5px;
-}
-
-#contact-button:hover{
-    box-shadow:inset 0px -35px 0px #45FF00;   
-}
-#home-button{
-    right: 70px;
-    top: 22px;
-    box-shadow: inset 0px -2px 0px #45FF00;
-    transition: .2s ease 0s;
-    line-height:25px;
-    padding: 5px;
-}
-
-#home-button:hover{
-    box-shadow:inset 0px -35px 0px #45FF00;   
-}
-#works-button{
-    right: 50px;
-    bottom: 0;   
-}
-
-#works-button a{
-    box-shadow: inset 0px 0px 0px #45FF00;
-    transition: .2s ease 0s;
-    line-height: 30px;
-    padding: 10px 5px;
-}
-
-#works-button>span{
-    display: block;
-    width: 2px;
-    height: 130px;
-    background-color: #45FF00;
-    margin-top: 10px;
-    margin-left: 35px;
-}
-
-#works-button:hover a{
-    box-shadow:inset 0px -40px 0px #45FF00;   
-}
 #socialNetwork{
     position: fixed;
     width: 30px;
@@ -164,7 +64,8 @@ h2{
     margin-left: 23px;
 }
 
-/****** BURGER ****/
+/* ========================= BURGER =========================== */
+
 #hamburger-button{
     position: fixed;
     z-index: 9999;
@@ -172,7 +73,7 @@ h2{
     vertical-align: top;
     height:30px;
     width:40px;
-    margin-left:120px;
+    left:120px;
     top:50%;
     cursor: pointer;
 }
@@ -215,8 +116,8 @@ h2{
     opacity:.9;
     z-index:888; 
     height:100%;
-    width: 200px;
-    left:-210px;
+    width: 100%;
+    left:-110%;
     transition:0.4s;
     -webkit-transition-timing-function: ease-out;
     -moz-transition-timing-function: ease-out;
@@ -225,71 +126,36 @@ h2{
     transition-timing-function: ease-out;
     background-color:#000;
 }
+
 .navbar.open{
     left:0;
 }
+
 .navbar ul{
+    position: relative;
     list-style:none;
-    margin-top:60%;
-    font-size:1.5em;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:3em;
 }
+
 .navbar ul li{
-    border-bottom:1px solid #282a29;
     margin-bottom:10px;
-    padding:10px;
-    text-align:left;
+    padding: 10px;
+    text-align: center;
     z-index: 999;
     
 }
 .navbar ul li a{
     transition: .3s ease;
 }
+
 .navbar>ul>li>a:hover{
     color: #45FF00;
 }
 
-
-h1{
-    position: absolute;
-    width: 400px;
-    color: #f7f7f7;
-    font-size: 80px;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 900;
-     opacity: 0;
-    animation: opacity;
-    animation-delay: .2s;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-}
-
-@keyframes opacity {
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-
-#h1{
-    text-align: left;    
-}
-
-#mail{
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transition: .3s ease;
-}
-#mail:hover{
-    opacity: 0.5;
-}
-
-/****************
-ABOUT BIO
-****************/
+/* ==================== ABOUT BIO ======================== */
 
 h3{
     position: absolute;

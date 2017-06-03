@@ -43,12 +43,12 @@ PARALAX
             $('#team-h3').css({'top': function (index, value) {return 900 - $(window).scrollTop() * 0.4}});
             $('#h3-span').css({'top': function (index, value) {return 880 - $(window).scrollTop() * 0.4}});
             $('#team').css({'top': function (index, value) {return 950 - $(window).scrollTop() * 0.3}});
-            
-    
-        });
-   
+        }); 
     });
-    /* =================================================================== ASIDE ====================================================================== */
+    
+    /* =================================================================== ASIDE
+    ====================================================================== */
+    
     var	$parent = $("main"),
         $aside = $("#aside"),
         $asideTarget = $aside.find(".aside--details"),
@@ -101,4 +101,10 @@ PARALAX
         }
     });
     
+});
+
+window.scroll({
+  top: 2500, 
+  left: 0, 
+  behavior: 'smooth' 
 });

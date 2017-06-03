@@ -1,5 +1,4 @@
 @media screen and (min-width:1024px){
-    .navbar ul li{border-bottom:1px solid #282a29;}
     .socialIcon{display: none;}
     .burger{display: none;}
 }
@@ -8,11 +7,9 @@
     .burger{display: block;}
     .main-menu{display: none;}
     #logo{margin: 100px 20px;}
-    #hamburger-button{top: 30px; margin-left: 30px;}
-    .navbar{width: 100%; left: -100%;}
+    #hamburger-button{top: 30px; left: 30px;}
     #socialNetwork{display: none;}
-    .navbar ul{margin-top: 30%; margin-left: 35%; width: 160px;}
-    .socialIcon{ float: left; transition: opacity .2s ease;}
+    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 42%;} 
     .socialIcon:hover{opacity: 0.6;}
     .navbar ul li{font-size: 1.4em;}
     h1{font-size: 70px;}
@@ -38,9 +35,10 @@
 
 @media screen and (max-width:480px){
     #logo{width: 55px;}
+    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 33%;} 
     .works-nav{font-size: 20px; font-weight: 700;}
     .span-nav{height: 20px;}
-    .navbar ul{font-size: 1.3em; width: 150px;}
+    .navbar ul{font-size: 1.3em;}
     #h2{font-size: 1.5em;}
     h6{font-size: 1em;}
     .items{width: 200px; height: 120px;}

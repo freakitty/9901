@@ -3,7 +3,7 @@ html, body{height: 100%; width: 100%; font-family: 'Roboto', sans-serif; backgro
 main{
     position: relative;
     background-color: #000; 
-    box-shadow: 2px 2px 4px #999;
+    box-shadow: 2px 2px 4px #333;
     z-index: 20;
     transition: transform .6s ease;
     width: 100%; 
@@ -16,9 +16,7 @@ main{
     height: 100%;
 }
 
-/************* 
-NAVIGATION
-**************/
+/* ================================ NAVIGATION =========================== */
 
 #logo{
     position: fixed;
@@ -139,7 +137,9 @@ h6{
 #h6-dg{
     margin-left: 23px;
 }
-/****** BURGER ****/
+
+/*================================== BURGER ============================*/
+
 #hamburger-button{
     position: fixed;
     z-index: 9999;
@@ -147,7 +147,7 @@ h6{
     vertical-align: top;
     height:30px;
     width:40px;
-    margin-left:120px;
+    left:120px;
     top:50%;
     cursor: pointer;
 }
@@ -190,8 +190,8 @@ h6{
     opacity:.9;
     z-index:888; 
     height:100%;
-    width: 200px;
-    left:-210px;
+    width: 100%;
+    left:-110%;
     transition:0.4s;
     -webkit-transition-timing-function: ease-out;
     -moz-transition-timing-function: ease-out;
@@ -204,16 +204,18 @@ h6{
     left:0;
 }
 .navbar ul{
+    position: relative;
     list-style:none;
-    margin-top:60%;
-    font-size:1.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:3em;
     
 }
 .navbar ul li{
-    border-bottom:1px solid #282a29;
     margin-bottom:10px;
     padding:10px;
-    text-align:left;
+    text-align:center;
     z-index: 999;
     
 }
@@ -436,7 +438,7 @@ MAIN NAV
 
 #illu1{
     position: relative;
-    background:  url(../images/illustration/animals/Ceva_Judicael_2eme_annee_Insecte.jpg);
+    background:  url(../images/illustration/animals/insecte.jpg);
     background-size: cover;
     
 }
@@ -765,7 +767,6 @@ MAIN NAV
     width: 300px;
     height: 200px;
     cursor: pointer;
-
 }
 
 .items .name{
@@ -793,28 +794,31 @@ MAIN NAV
     position: fixed;
     top: 0;
     right: 0;
-    width: 80%;
+    width: 95%;
     height: 100%;
-    background: #f7f7f7;
+    background: #fff;
     overflow: scroll;
 }
 
 #aside img {
-    width: 100%;
+    position: relative;
+    left: 50%;
+    width: 70%;
+    transform: translateX(-50%);
     vertical-align: top;
 }
+
 #aside .wrapper {
     padding: 1em;
     font-size: 0.8em
 }
 
 #aside .close {
-    width: 25px;
+    width: 30px;
     display: block;
     position: absolute;
     top: 1em;
     right: 1em;
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     text-decoration: none;
     transition: opacity .5s ease;
@@ -827,11 +831,11 @@ MAIN NAV
     overflow: hidden;
 }
 .show-detail main {
-    -webkit-transform: translateX(-80%);
-    -moz-transform: translateX(-80%);
-    -ms-transform: translateX(-80%);
-    -o-transform: translateX(-80%);
-    transform: translateX(-80%);
+    -webkit-transform: translateX(-95%);
+    -moz-transform: translateX(-95%);
+    -ms-transform: translateX(-95%);
+    -o-transform: translateX(-95%);
+    transform: translateX(-95%);
 }
 
 .visually-hidden {
@@ -845,18 +849,24 @@ MAIN NAV
     border: 0;
 }
 
-h4{
-    font-size: 1.4em;
-    font-weight: 700;
+h4{ 
+    z-index: 20;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 4em;
+    font-weight: 900;
+    color: #45FF00;
 }
 .wrapper p{
-    font-family: Mate;
+    column-count: 2;
+    font-family: 'crimson text' ;
     font-size: 1.3em;
     font-weight: 500;
     width: 600px;
     margin-left: 20%;
     line-height: 20px;
-    color: #999;
+    color: #000;
 }
 
 iframe{

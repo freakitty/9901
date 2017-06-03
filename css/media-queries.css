@@ -1,5 +1,4 @@
 @media screen and (min-width:1024px){
-    .navbar ul li{border-bottom:1px solid #282a29;}
     .socialIcon{display: none;}
 }
 
@@ -7,13 +6,11 @@
     .burger{display: block;}
     .main-menu{display: none;}
     #logo{margin-top: 20px; left: 43%; transform: translateX(-50%);}
-    #hamburger-button{top: 30px; margin-left: 30px;}
-    .navbar{width: 100%; left: -100%;}
+    #hamburger-button{top: 30px; left: 30px;}
     #socialNetwork{display: none;}
-    .navbar ul{margin-top: 30%; margin-left: 35%; width: 140px;}
-    .socialIcon{ float: left; transition: opacity .2s ease;}
+    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 42%;} 
     .socialIcon:hover{opacity: 0.6;}
-    .navbar ul li{font-size: 1.4em;}
+    .navbar ul li{font-size: 1.5em;}
     h1{font-size: 70px;}
     .works-nav{font-size: 40px;}
     .span-nav{height: 40px;}
@@ -35,8 +32,10 @@
 
 @media screen and (max-width:480px){
     #logo{width: 55px; left: 40%;}
+    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 33%;} 
+    .socialIcon:hover{opacity: 0.6;}
     h1{font-size: 50px; width: 300px;}
-    .navbar ul{font-size: 1.3em; width: 150px;}
+    .navbar ul{font-size: 1.3em;}
     #skip{display: none;}
     #bgvid{display: none;}
     h4{font-size: 40px; width: 180px;}
@@ -50,7 +49,6 @@
     article img{width: 150px;}
     #mail{width: 100px;}
     #h1{width: 200px; font-size: 40px;}
-    
 
 }
 
