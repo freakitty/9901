@@ -201,9 +201,11 @@ h6{
     transition-timing-function: ease-out;
     background-color:#000;
 }
+ 
 .navbar.open{
     left:0;
 }
+
 .navbar ul{
     position: relative;
     list-style:none;
@@ -860,12 +862,14 @@ h4{
     color: #45FF00;
 }
 .wrapper p{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     column-count: 2;
-    font-family: 'crimson text' ;
+    font-family: 'Assistant';
     font-size: 1.3em;
     font-weight: 500;
     width: 600px;
-    margin-left: 20%;
     line-height: 20px;
     color: #000;
 }

@@ -14,9 +14,11 @@ main{
     margin: 30px 45px;
     transition: .2s ease-out;
 }
+
 #logo:hover{
     opacity: 0.5;
 }
+
 ul>li>a{
     text-decoration: none;
     color: #f7f7f7;
@@ -77,6 +79,7 @@ h2{
     top:50%;
     cursor: pointer;
 }
+
 #hamburger-button>span {
     display: block;
     height: 4px;
@@ -90,6 +93,7 @@ h2{
     transition-timing-function: ease-out;
     transition-duration:0.4s;
 }   
+
 #hamburger-button.open>span:first-child{
     -webkit-transform: translateY(10px) rotate(45deg);
     -moz-transform: translateY(10px) rotate(45deg); 
@@ -97,6 +101,7 @@ h2{
     -o-transform: translateY(10px) rotate(45deg); 
     transform:translateY(10px) rotate(45deg);
 }
+
 #hamburger-button.open>span:nth-child(2){
     -webkit-transform: rotateY(90deg); 
     -moz-transform: rotateY(90deg); 
@@ -104,6 +109,7 @@ h2{
     -o-transform: rotateY(90deg); 
     transform: rotateY(90deg);
 }
+
 #hamburger-button.open>span:last-child{
     -webkit-transform: translateY(-10px) rotate(-45deg); 
     -moz-transform: translateY(-10px) rotate(-45deg); 
@@ -111,6 +117,7 @@ h2{
     -o-transform: translateY(-10px) rotate(-45deg); 
     transform: translateY(-10px) rotate(-45deg);
 }
+
 .navbar{
     position:fixed;
     opacity:.9;
@@ -145,8 +152,8 @@ h2{
     padding: 10px;
     text-align: center;
     z-index: 999;
-    
 }
+
 .navbar ul li a{
     transition: .3s ease;
 }
@@ -165,12 +172,15 @@ h3{
     font-size: 80px;
     font-weight: 900;
 }
+
 #title-h3{
-    top: 20px;
+    top: 150px;
 }
+
 #team-h3{
-    top: 830px;
+    top: 900px;
 }
+
 .about-bio{
     position: absolute;
     color: #f7f7f7;
@@ -178,32 +188,35 @@ h3{
     font-family: Mate;
     font-size: 0.9em;
     line-height: 1.4em;
-    
+    background: rgba(0,0,0,0.5);
 }
+
 #about-bio{
     left: 30%;
-    top: 150px;;
+    top: 300px;;
 }
+
 #about-bio2{
     right: 15%;
-    top: 400px;
+    top: 550px;
     width: 250px;
     text-align: right; 
 }
+
 #span-bio{
     position: absolute;
-    top: 400px;
+    top: 550px;
     right: 14%;
     display: block;
     background-color: #f7f7f7;
     width: 2px;
-    height: 240px;
+    height: 165px;
 }
 
 #h3-span{
     display: block;
     position: absolute;
-    top: 820px;
+    top: 880px;
     left: 30%;
     width: 220px;
     height: 8px;
@@ -213,19 +226,22 @@ h3{
 #team{
     position: absolute;
     left: 30%;
-    top: 870px;
+    top: 950px;
 }
+
 article{
-    height: 420px;
+    height: 820px;
     width: 200px;
     display: inline-block;
     vertical-align: top;
     margin-top: 66px;
     position: relative;
 }
+
 #jeo{
     margin-right: 40px;
 }
+
 #judi{
     margin-right: 40px;
 }
@@ -236,6 +252,7 @@ h5{
     padding-top: 20px;
     padding-left: 10px;
 }
+
 article>img{
     width: 200px;
     margin-top: 20px;
