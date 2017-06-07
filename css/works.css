@@ -112,10 +112,15 @@ ul>li>a{
     color: #45FF00;
     font-weight: 700;
     transform: rotate(270deg);
-    margin-left: 23px;
-    text-decoration: none;
+    margin-left: 20px;
+    
     transition: color .4s ease;
 }
+em{
+    color: #45FF00;
+    font-weight: 700;
+}
+
 #h2:hover{
     color: #f7f7f7;
 }
@@ -716,6 +721,41 @@ MAIN NAV
 }
 
 #photo2:hover:after{
+    opacity: 1;
+}
+
+/* ============== PHOTO 03 =========== */
+
+#photo3{
+    position: relative;
+    background:  url(../images/photography/Photomaton/various01.jpg);
+    background-size: cover;
+}
+
+#photo3:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/Photomaton/various01.jpg);
+    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/Photomaton/various01.jpg);
+    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/Photomaton/various01.jpg);
+    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7), url(../images/photography/Photomaton/various01.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))), url(../images/photography/Photomaton/various01.jpg);
+    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/photography/Photomaton/various01.jpg);
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+}
+
+#photo3:hover:after{
     opacity: 1;
 }
 

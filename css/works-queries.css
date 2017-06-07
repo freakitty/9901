@@ -28,7 +28,8 @@
     h6{margin-left: 10px;}
     #h6-vid{margin-left: 50px;}
     #h6-dg{margin-left: 0px;}
-    .wrapper p{width: 400px; margin-left: 17%;}
+    .wrapper p{width: 400px;}
+    h4{top:20%; font-size: 3em;}
 
 }
 
@@ -47,6 +48,7 @@
     #aside{width: 87%;}
     .show-detail main {-webkit-transform: translateX(-87%); -moz-transform: translateX(-87%); -ms-transform: translateX(-87%); -o-transform: translateX(-87%); transform: translateX(-87%);}
     iframe{height: 250px;}
+    h4{top: 10%; font-size: 1.5em;}
 
 }
 

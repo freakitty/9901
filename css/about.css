@@ -79,7 +79,6 @@ h2{
     top:50%;
     cursor: pointer;
 }
-
 #hamburger-button>span {
     display: block;
     height: 4px;
@@ -93,7 +92,6 @@ h2{
     transition-timing-function: ease-out;
     transition-duration:0.4s;
 }   
-
 #hamburger-button.open>span:first-child{
     -webkit-transform: translateY(10px) rotate(45deg);
     -moz-transform: translateY(10px) rotate(45deg); 
@@ -101,7 +99,6 @@ h2{
     -o-transform: translateY(10px) rotate(45deg); 
     transform:translateY(10px) rotate(45deg);
 }
-
 #hamburger-button.open>span:nth-child(2){
     -webkit-transform: rotateY(90deg); 
     -moz-transform: rotateY(90deg); 
@@ -109,7 +106,6 @@ h2{
     -o-transform: rotateY(90deg); 
     transform: rotateY(90deg);
 }
-
 #hamburger-button.open>span:last-child{
     -webkit-transform: translateY(-10px) rotate(-45deg); 
     -moz-transform: translateY(-10px) rotate(-45deg); 
@@ -117,7 +113,6 @@ h2{
     -o-transform: translateY(-10px) rotate(-45deg); 
     transform: translateY(-10px) rotate(-45deg);
 }
-
 .navbar{
     position:fixed;
     opacity:.9;
@@ -143,14 +138,14 @@ h2{
     list-style:none;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:2.5em;
+    transform: translate(-50%, -50%);  
+    font-size: 2.5em;
 }
 
 .navbar ul li{
     margin-bottom:10px;
-    padding: 10px;
-    text-align: center;
+    padding:10px;
+    text-align:center;
     z-index: 999;
 }
 
