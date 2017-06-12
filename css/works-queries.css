@@ -44,7 +44,7 @@
     h6{font-size: 1em;}
     .items{width: 200px; height: 120px;}
     .gallery{margin-left: 80px;}
-    .wrapper p{font-size: 0.8em; width: 180px;}
+    .wrapper p{font-size: 0.8em; width: 180px;line-height: 10px;}
     #aside{width: 87%;}
     .show-detail main {-webkit-transform: translateX(-87%); -moz-transform: translateX(-87%); -ms-transform: translateX(-87%); -o-transform: translateX(-87%); transform: translateX(-87%);}
     iframe{height: 250px;}

@@ -1,3 +1,7 @@
+@media screen and (min-width:1360px){
+    .card{margin-left: 100px;}
+}
+
 @media screen and (min-width:1024px){
     .socialIcon{display: none;}
 }
@@ -25,7 +29,13 @@
     .gallery{margin-left: 120px;}
     h2{margin-left: -20px;}
     #h2about{margin-left: 0px;}
-    h4{top: 3300px;}
+    h4{top: 2400px;}
+    .card{width: 200px;}
+    .cardThumb{height: 280px;}
+    .cardDescription{font-size: 11px; line-height: 17px;}
+    .card:hover .cardBody {height: 700px;}
+
+    
 
 }
 
@@ -38,15 +48,27 @@
     .navbar ul{font-size: 1.3em;}
     #skip{display: none;}
     #bgvid{display: none;}
-    h4{font-size: 40px; width: 180px;}
+    h4{font-size: 40px; width: 180px; top: 2450px;}
     h2{font-size: 1.5em;}
     h3{width: 250px; font-size: 50px;}
     #h3-span{width: 140px;}
     .about-bio{width: 150px; font-size: 0.8em;}
-    article{height: 800px;}
     #about-bio2{width: 150px;}
     #span-bio{height: 225px; right: 11%;}
-    article img{width: 150px;}
     #mail{width: 100px;}
     #h1{width: 200px; font-size: 40px;}
+    #about-bio{width: 200px;}
+    .cardThumb{height: 250px;}
+    .card:hover .cardThumb {height: 180px;}   
+}
+
+@media screen and (max-width:320px){
+    .card{width: 150px;}
+    .cardThumb{height: 200px;}
+    .cardDescription{font-size: 9px; line-height: 13px;}
+    .card:hover .cardBody {height: 660px;}
+    .card:hover .cardThumb {height: 130px;}
+    .cardTitle{font-size: 18px;} 
+    .cardSubtitle{font-size: 15px;}
+    h3, #about-bio, #h3-span, #team, h4{left: 25%;}
 }

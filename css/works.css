@@ -513,40 +513,7 @@ MAIN NAV
     opacity: 1;
 }
 
-/* ============== ILLU 03 =========== */
 
-#illu3{
-    position: relative;
-    background:  url(../images/illustration/free-drawing.jpg);
-    background-size: cover;
-}
-
-#illu3:after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/free-drawing.jpg);
-    background: -moz-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/free-drawing.jpg);
-    background: -o-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/free-drawing.jpg);
-    background: -ms-linear-gradient(top, rgba(69,255,0,0.7)), rgba(69,255,0,0.7), url(../images/illustration/free-drawing.jpg);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(69,255,0,0.7)), to(rgba(69,255,0,0.7))), url(../images/illustration/free-drawing.jpg);
-    background: -webkit-linear-gradient(top, rgba(69,255,0,0.7), rgba(69,255,0,0.7)), url(../images/illustration/free-drawing.jpg);
-    -webkit-transition: opacity .5s ease;
-    -moz-transition: opacity .5s ease;
-    -ms-transition: opacity .5s ease;
-    -o-transition: opacity .5s ease;
-    transition: opacity .5s ease;
-    background-size: cover;
-    z-index: 2;
-    opacity: 0;
-}
-
-#illu3:hover:after{
-    opacity: 1;
-}
 
 /* ============== ILLU 04 =========== */
 
@@ -894,12 +861,12 @@ MAIN NAV
 
 h4{ 
     z-index: 20;
-    position: absolute;
-    top: 40%;
-    left: 10%;
+    position: relative;
+    left: 20%;
     font-size: 4em;
     font-weight: 900;
-    color: #45FF00;
+    color: #000;
+    
 }
 .wrapper p{
     position: relative;
