@@ -12,7 +12,7 @@
     #logo{margin-top: 20px; left: 43%; transform: translateX(-50%);}
     #hamburger-button{top: 30px; left: 30px;}
     #socialNetwork{display: none;}
-    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 42%;} 
+    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 38%;} 
     .socialIcon:hover{opacity: 0.6;}
     .navbar ul li{font-size: 1.5em;}
     h1{font-size: 70px;}
@@ -34,15 +34,12 @@
     .cardThumb{height: 280px;}
     .cardDescription{font-size: 11px; line-height: 17px;}
     .card:hover .cardBody {height: 700px;}
-
-    
-
 }
 
 
 @media screen and (max-width:480px){
     #logo{width: 55px; left: 40%;}
-    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 33%;} 
+    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 28%;} 
     .socialIcon:hover{opacity: 0.6;}
     h1{font-size: 50px; width: 300px;}
     .navbar ul{font-size: 1.3em;}

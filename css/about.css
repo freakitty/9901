@@ -6,7 +6,7 @@ main{
     height: 100%;
 }
 
-/* ===================================  NAVIGATION ========================== */
+/* =================================== LOGO ========================== */
 
 #logo{
     position: fixed;
@@ -19,10 +19,7 @@ main{
     opacity: 0.5;
 }
 
-ul>li>a{
-    text-decoration: none;
-    color: #f7f7f7;
-}
+/* ==================================== SOCIAL NETWORK ================================ */
 
 #socialNetwork{
     position: fixed;
@@ -44,7 +41,7 @@ ul>li>a{
 }
 
 #socialNetwork a img{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     cursor: pointer;
     transition: .1s ease;
 }
@@ -53,9 +50,11 @@ ul>li>a{
     opacity: 0.5;
 }
 
+/* ========================= LATERAL TITLE =========================== */
+
 h2{
     position: fixed;
-    bottom: 15%;
+    bottom: 11%;
     font-size: 2em;
     color: #45FF00;
     font-weight: 700;
@@ -67,6 +66,11 @@ h2{
 }
 
 /* ========================= BURGER =========================== */
+
+ul>li>a{
+    text-decoration: none;
+    color: #f7f7f7;
+}
 
 #hamburger-button{
     position: fixed;
@@ -157,7 +161,7 @@ h2{
     color: #45FF00;
 }
 
-/* ==================== ABOUT BIO ======================== */
+/* ========================= INTRODUCTION ============================ */
 
 h3{
     position: absolute;
@@ -170,10 +174,6 @@ h3{
 
 #title-h3{
     top: 150px;
-}
-
-#team-h3{
-    top: 1100px;
 }
 
 .about-bio{
@@ -209,6 +209,12 @@ h3{
     height: 200px;
 }
 
+/* ========================= TEAM INTRODUCTION ============================ */
+
+#team-h3{
+    top: 1100px;
+}
+
 #h3-span{
     display: block;
     position: absolute;
@@ -225,6 +231,181 @@ h3{
     top: 1250px;  
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    margin-left: 50px;
+    width: 270px;
+    background-color: #000;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    float: left;
+    vertical-align: top;
+}
+
+.card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.cardThumb {
+    height: 335px;
+    overflow: hidden;
+    background-color: #000;
+    transition: height 0.3s;
+}
+
+.cardThumb img {
+    display: block;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.card:hover .cardThumb img {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.card:hover .cardThumb {
+    height: 220px;
+}
+
+.cardBody {
+    position: relative;
+    padding: 20px;
+    height: 185px;
+    transition: height 0.3s;
+}
+
+.card:hover .cardBody {
+    height: 900px;
+}
+
+.cardCategory {
+    position: relative;
+    left: 0;
+    top: -30px;
+    height: 30px;
+    padding: 0 15px;
+    color: #000;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: #45FF00;
+}
+
+.cardTitle {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 22px;
+    color: #f7f7f7;
+    font-weight: bold;
+}
+
+.card:hover .cardTitle {
+    -webkit-animation: titleBlur 0.3s;
+    animation: titleBlur 0.3s;
+}
+
+.cardSubtitle {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 19px;
+    color: #45FF00;
+}
+
+.card:hover .cardSubtitle {
+    -webkit-animation: subtitleBlur 0.3s;
+    animation: subtitleBlur 0.3s;
+}
+
+.cardDescription {
+    position: relative;
+    top: 20px;
+    bottom: 45px;
+    margin: 0;
+    padding: 0;
+    color: #f7f7f7;
+    font-size: 14px;
+    line-height: 27px;
+    opacity: 0;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition-delay: 0s;
+    -webkit-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    transform: translateY(25px);
+}
+
+.card:hover .cardDescription {
+    opacity: 1;
+    transition-delay: 0.1s;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+@-webkit-keyframes titleBlur {
+    0% {
+        opacity: 0.6;
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0px 5px 5px transparent;
+    }
+}
+
+@keyframes titleBlur {
+    0% {
+        opacity: 0.6;
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0px 5px 5px transparent;
+    }
+}
+
+@-webkit-keyframes subtitleBlur {
+    0% {
+        opacity: 0.6;
+        text-shadow: 0px 5px 5px rgba(255, 140, 0, 0.6);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0px 5px 5px rgba(255, 140, 0, 0);
+    }
+}
+
+@keyframes subtitleBlur {
+    0% {
+        opacity: 0.6;
+        text-shadow: 0px 5px 5px rgba(255, 140, 0, 0.6);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0px 5px 5px rgba(255, 140, 0, 0);
+    }
+}
+
+/* ========================= CATCH PHRASE ============================ */
+
 h4{
     position: absolute;
     top: 1900px;
@@ -233,178 +414,4 @@ h4{
     color: #45FF00;
     font-size: 80px;
     font-weight: 900;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.card {
-  position: relative;
-  overflow: hidden;
-  margin-left: 50px;
-  width: 270px;
-  background-color: #000;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s;
-    float: left;
-    vertical-align: top;
-}
-
-.card a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.card:hover {
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
-}
-
-.cardThumb {
-  height: 335px;
-  overflow: hidden;
-  background-color: #000;
-  transition: height 0.3s;
-}
-
-.cardThumb img {
-  display: block;
-    width: 100%;
-  opacity: 1;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.card:hover .cardThumb img {
-  opacity: 0.6;
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.card:hover .cardThumb {
-  height: 220px;
-}
-
-.cardBody {
-  position: relative;
-  padding: 20px;
-  height: 185px;
-  transition: height 0.3s;
-}
-
-.card:hover .cardBody {
-  height: 900px;
-}
-
-.cardCategory {
-  position: relative;
-  left: 0;
-  top: -30px;
-  height: 30px;
-  padding: 0 15px;
-  color: #000;
-  font-size: 15px;
-  line-height: 30px;
-  text-transform: uppercase;
-  background-color: #45FF00;
-}
-
-.cardTitle {
-  margin: 0;
-  padding: 0 0 10px 0;
-  font-size: 22px;
-  color: #f7f7f7;
-  font-weight: bold;
-}
-
-.card:hover .cardTitle {
-  -webkit-animation: titleBlur 0.3s;
-  animation: titleBlur 0.3s;
-}
-
-.cardSubtitle {
-  margin: 0;
-  padding: 0 0 10px 0;
-  font-size: 19px;
-  color: #45FF00;
-}
-
-.card:hover .cardSubtitle {
-  -webkit-animation: subtitleBlur 0.3s;
-  animation: subtitleBlur 0.3s;
-}
-
-.cardDescription {
-  position: relative;
-    top: 20px;
-  
-  bottom: 45px;
-  margin: 0;
-  padding: 0;
-  color: #f7f7f7;
-  font-size: 14px;
-  line-height: 27px;
-  opacity: 0;
-  transition: opacity 0.2s, -webkit-transform 0.2s;
-  transition: opacity 0.2s, transform 0.2s;
-  transition-delay: 0s;
-  -webkit-transform: translateY(25px);
-  -ms-transform: translateY(25px);
-  transform: translateY(25px);
-}
-
-.card:hover .cardDescription {
-  opacity: 1;
-  transition-delay: 0.1s;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-}
-
-@-webkit-keyframes titleBlur {
-  0% {
-    opacity: 0.6;
-    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 0px 5px 5px transparent;
-  }
-}
-
-@keyframes titleBlur {
-  0% {
-    opacity: 0.6;
-    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 0px 5px 5px transparent;
-  }
-}
-
-@-webkit-keyframes subtitleBlur {
-  0% {
-    opacity: 0.6;
-    text-shadow: 0px 5px 5px rgba(255, 140, 0, 0.6);
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 0px 5px 5px rgba(255, 140, 0, 0);
-  }
-}
-
-@keyframes subtitleBlur {
-  0% {
-    opacity: 0.6;
-    text-shadow: 0px 5px 5px rgba(255, 140, 0, 0.6);
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 0px 5px 5px rgba(255, 140, 0, 0);
-  }
 }

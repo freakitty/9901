@@ -6,9 +6,7 @@ main{
     height: 100%;
 }
 
-/***********
-VIDEO
-**********/
+/* ============================== VIDEO ================================ */
 
 #bgvid{
     position: fixed;
@@ -37,10 +35,7 @@ VIDEO
     color: #f7f7f7;
 }
 
-
-/************* 
-NAVIGATION
-**************/
+/* ==================================== LOGO ================================ */
 
 #logo{
     position: fixed;
@@ -51,6 +46,9 @@ NAVIGATION
 #logo:hover{
     opacity: 0.5;
 }
+
+/* ==================================== MENU ================================ */
+
 ul>li>a{
     text-decoration: none;
     color: #f7f7f7;
@@ -58,14 +56,14 @@ ul>li>a{
 
 .button{
     cursor: pointer;
-    position: absolute;   
+    position: absolute;
+    transition: all .2s ease 0s;
 }
 
 #about-button{
     right: 150px;
     top: 22px;
     box-shadow: inset 0px -2px 0px #45FF00;
-    transition: all .2s ease 0s;
     line-height:25px;
     padding: 5px;
 }
@@ -78,7 +76,6 @@ ul>li>a{
     right: 50px;
     top: 22px;
     box-shadow: inset 0px -2px 0px #45FF00;
-    transition: .2s ease 0s;
     line-height:25px;
     padding: 5px;
 }
@@ -86,11 +83,11 @@ ul>li>a{
 #contact-button:hover{
     box-shadow:inset 0px -35px 0px #45FF00;   
 }
+
 #home-button{
     right: 70px;
     top: 22px;
     box-shadow: inset 0px -2px 0px #45FF00;
-    transition: .2s ease 0s;
     line-height:25px;
     padding: 5px;
 }
@@ -98,6 +95,7 @@ ul>li>a{
 #home-button:hover{
     box-shadow:inset 0px -35px 0px #45FF00;   
 }
+
 #works-button{
     right: 50px;
     bottom: 0;   
@@ -105,8 +103,8 @@ ul>li>a{
 
 #works-button a{
     box-shadow: inset 0px 0px 0px #45FF00;
-    transition: .2s ease 0s;
     line-height: 30px;
+    transition: .2s ease 0s;
     padding: 10px 5px;
 }
 
@@ -122,6 +120,9 @@ ul>li>a{
 #works-button:hover a{
     box-shadow:inset 0px -40px 0px #45FF00;   
 }
+
+/* ==================================== SOCIAL NETWORK ================================ */
+
 #socialNetwork{
     position: fixed;
     width: 30px;
@@ -142,7 +143,7 @@ ul>li>a{
 }
 
 #socialNetwork a img{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     cursor: pointer;
     transition: .1s ease;
 }
@@ -151,20 +152,18 @@ ul>li>a{
     opacity: 0.5;
 }
 
+/* ==================================== LATERAL TITLE ================================ */
+
 h2{
     position: fixed;
-    bottom: 15%;
+    bottom: 11%;
     font-size: 2em;
     color: #45FF00;
     font-weight: 700;
     transform: rotate(270deg)
 }
 
-#h2about{
-    margin-left: 23px;
-}
-
-/* ========================== BURGER ===================== */
+/* ========================================== BURGER =============================== */
 
 #hamburger-button{
     position: fixed;
@@ -177,6 +176,7 @@ h2{
     top:50%;
     cursor: pointer;
 }
+
 #hamburger-button>span {
     display: block;
     height: 4px;
@@ -189,7 +189,8 @@ h2{
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     transition-duration:0.4s;
-}   
+}  
+
 #hamburger-button.open>span:first-child{
     -webkit-transform: translateY(10px) rotate(45deg);
     -moz-transform: translateY(10px) rotate(45deg); 
@@ -197,6 +198,7 @@ h2{
     -o-transform: translateY(10px) rotate(45deg); 
     transform:translateY(10px) rotate(45deg);
 }
+
 #hamburger-button.open>span:nth-child(2){
     -webkit-transform: rotateY(90deg); 
     -moz-transform: rotateY(90deg); 
@@ -204,6 +206,7 @@ h2{
     -o-transform: rotateY(90deg); 
     transform: rotateY(90deg);
 }
+
 #hamburger-button.open>span:last-child{
     -webkit-transform: translateY(-10px) rotate(-45deg); 
     -moz-transform: translateY(-10px) rotate(-45deg); 
@@ -211,6 +214,7 @@ h2{
     -o-transform: translateY(-10px) rotate(-45deg); 
     transform: translateY(-10px) rotate(-45deg);
 }
+
 .navbar{
     position:fixed;
     opacity:.9;
@@ -259,6 +263,8 @@ h2{
     display: none;
 }
 
+/* ==================================== CATCH PHRASE ================================ */
+
 h1{
     position: absolute;
     width: 400px;
@@ -269,7 +275,7 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 900;
-     opacity: 0;
+    opacity: 0;
     animation: opacity;
     animation-delay: .2s;
     animation-duration: .5s;
@@ -286,6 +292,8 @@ h1{
     text-align: left;    
 }
 
+/* ==================================== MAIL ================================ */
+
 #mail{
     position: absolute;
     bottom: 15%;
@@ -295,110 +303,3 @@ h1{
 #mail:hover{
     opacity: 0.5;
 }
-
-/****************
-ABOUT BIO
-****************/
-
-h3{
-    position: absolute;
-    left: 30%;
-    width: 400px;
-    color: #f7f7f7;
-    font-size: 80px;
-    font-weight: 900;
-}
-#title-h3{
-    top: 170px;
-}
-#team-h3{
-    top: 830px;
-}
-.about-bio{
-    position: absolute;
-    color: #f7f7f7;
-    width: 200px;
-    font-family: 'Roboto';
-    font-weight: 300;
-    font-size: 0.9em;
-    line-height: 1.4em;
-    letter-spacing: .4px;
-    background: rgba(0,0,0,0.5);
-    
-}
-#about-bio{
-    left: 30%;
-    top: 300px;
-    font-family: 'Mate';
-}
-#about-bio2{
-    right: 15%;
-    top: 550px;
-    width: 250px;
-    text-align: right; 
-    font-family: 'Mate';
-}
-#span-bio{
-    position: absolute;
-    top: 550px;
-    right: 14%;
-    display: block;
-    background-color: #f7f7f7;
-    width: 2px;
-    height: 180px;
-}
-
-#h3-span{
-    display: block;
-    position: absolute;
-    top: 880px;
-    left: 30%;
-    width: 220px;
-    height: 8px;
-    background-color: #45FF00; 
-}
-
-#team{
-    position: absolute;
-    left: 30%;
-    top: 950px;
-}
-article{
-    height: 900px;
-    width: 200px;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 66px;
-    position: relative;
-    
-}
-#jeo{
-    margin-right: 40px;
-}
-#judi{
-    margin-right: 40px;
-}
-
-h5{
-    color: #45FF00;
-    letter-spacing: 3px;
-    padding-top: 20px;
-    padding-left: 10px;
-}
-article>img{
-    width: 200px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-h4{
-    position: absolute;
-    top: 2000px;
-    left: 30%;
-    width: 400px;
-    color: #45FF00;
-    font-size: 80px;
-    font-weight: 900;
-}
-
-b{font-weight: 700;}

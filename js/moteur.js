@@ -1,8 +1,11 @@
 /*global $, jQuery */
 
+/* ========================================= VIDEO =========================================== */
+
 var vid = document.getElementById('bgvid');
 if (vid) {
     vid.addEventListener('ended', function () {
+        'use strict';
         $(this).css({'display': 'none'});
         $('#skip').css({'display': 'none'});
     });
@@ -16,9 +19,7 @@ $(function () {
         $('#bgvid').css({'display': 'none'});
     });
 
-/****** 
-BURGER 
-*****/
+/* ==================================== BURGER ================================= */
     
     function animateHamburger() {
         $('#hamburger-button').toggleClass('open');
@@ -30,24 +31,20 @@ BURGER
         animateHamburger();
         slideMenu();
     });
-/************
-PARALAX
-***********/
     
-    $(function () {
-        $(window).scroll(function () {
-            $('#title-h3').css({'top': function (index, value) {return 150 - $(window).scrollTop() * 0.2}});
-            $('#about-bio').css({'top': function (index, value) {return 300 - $(window).scrollTop() * 0.4}});
-            $('#about-bio2').css({'top': function (index, value) {return 750 - $(window).scrollTop() * 0.5}});
-            $('#span-bio').css({'top': function (index, value) {return 750 - $(window).scrollTop() * 0.5}});
-            $('#team-h3').css({'top': function (index, value) {return 1100 - $(window).scrollTop() * 0.4}});
-            $('#h3-span').css({'top': function (index, value) {return 1080 - $(window).scrollTop() * 0.4}});
-            $('#team').css({'top': function (index, value) {return 1250 - $(window).scrollTop() * 0.3}});
-        });
+/* ================================= PARALAX ================================ */
+
+    $(window).scroll(function () {
+        $('#title-h3').css({'top': function (index, value) {return 150 - $(window).scrollTop() * 0.2; }});
+        $('#about-bio').css({'top': function (index, value) {return 300 - $(window).scrollTop() * 0.4; }});
+        $('#about-bio2').css({'top': function (index, value) {return 750 - $(window).scrollTop() * 0.5; }});
+        $('#span-bio').css({'top': function (index, value) {return 750 - $(window).scrollTop() * 0.5; }});
+        $('#team-h3').css({'top': function (index, value) {return 1100 - $(window).scrollTop() * 0.4; }});
+        $('#h3-span').css({'top': function (index, value) {return 1080 - $(window).scrollTop() * 0.4; }});
+        $('#team').css({'top': function (index, value) {return 1250 - $(window).scrollTop() * 0.3; }});
     });
     
-    /* ======================================================== ASIDE
-    ============================================================= */
+/* ========================================= ASIDE =========================================== */
     
     var	$parent = $("main"),
         $aside = $("#aside"),
@@ -100,8 +97,6 @@ PARALAX
             killAside();
         }
     });
-    
-
-    
+  
 });
 

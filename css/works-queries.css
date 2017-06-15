@@ -9,16 +9,16 @@
     #logo{margin: 100px 20px;}
     #hamburger-button{top: 30px; left: 30px;}
     #socialNetwork{display: none;}
-    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 42%;} 
+    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 38%;} 
     .socialIcon:hover{opacity: 0.6;}
     .navbar ul li{font-size: 1.4em;}
     h1{font-size: 70px;}
     .works-nav{font-size: 40px;}
     .span-nav{height: 40px;}
     #videos-nav{top: 25%;}
-    #illu-nav{left: 30%;}
-    #photo-nav{left: 30%; top: 55%;}
-    #dg-nav{left: 25%; top: 70%;}
+    #illu-nav{left: 28%;}
+    #photo-nav{left: 33%; top: 55%;}
+    #dg-nav{left: 31%; top: 70%;}
     .span-nav:first-child{top: 32%;}
     .span-nav:nth-child(2){top: 47%;}
     .span-nav:last-child{top: 62%;}
@@ -30,13 +30,15 @@
     #h6-dg{margin-left: 0px;}
     .wrapper p{width: 400px;}
     h4{top:20%; font-size: 3em;}
-
+    #h2{font-size: 1.7em;}
+    h6{font-size: 1.2em;}
+    #h3{top: 240px; left: 20px;}
 }
 
 
 @media screen and (max-width:480px){
     #logo{width: 55px;}
-    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 33%;} 
+    .socialIcon{position: relative; float: left; transition: opacity .2s ease; left: 28%;} 
     .works-nav{font-size: 20px; font-weight: 700;}
     .span-nav{height: 20px;}
     .navbar ul{font-size: 1.3em;}
@@ -49,10 +51,5 @@
     .show-detail main {-webkit-transform: translateX(-87%); -moz-transform: translateX(-87%); -ms-transform: translateX(-87%); -o-transform: translateX(-87%); transform: translateX(-87%);}
     iframe{height: 250px;}
     h4{top: 10%; font-size: 1.5em;}
-
-}
-
-
-@media screen and (max-width:320px){
-
+    #h3{top: 210px; left: 20px; font-size: 0.8em;}
 }
